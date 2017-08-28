@@ -29,18 +29,34 @@ public class MultiplexArray {
 
         final double[][] input = new double[x][y];
 
+        double bufer = 0d;
+
+        for (int i = 0; i < input.length; i++) {
+
+            for (int j = 0; j < input[i].length; j++) {
+
+                for (int k = 0; k < max; k++) {
+                    bufer += arrayA[i][k] * arrayB[k][j];
+                }
+
+                input[i][j] = bufer;
+                bufer = 0;
+            }
+
+        }
+
         return  input;
 
     }
 
-    public static int min(int a, int b){
+    private static int min(int a, int b){
 
         if (a > b) return b;
         else return a;
 
     }
 
-    public static int max(int a, int b){
+    private static int max(int a, int b){
 
         if (a < b) return b;
         else return a;

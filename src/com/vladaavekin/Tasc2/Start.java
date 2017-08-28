@@ -15,13 +15,13 @@ public class Start {
 
         Array array = new Array(A);
 
-        PrintArray.printArray(array.getArray());
-        System.out.println();
+        //PrintArray.printArray(array.getArray());
+        //System.out.println();
 
-        PrintArray.printArray(SumArray.arraySumNummber(array.getArray(), 1));
-        System.out.println();
+        //PrintArray.printArray(SumArray.arraySumNummber(array.getArray(), 1));
+        //System.out.println();
 
-        PrintArray.printArray(array.getArray());
+        //PrintArray.printArray(array.getArray());
 
         double[][] a = {{1, 2, 2},
                         {0, 3, 1}};
@@ -30,6 +30,11 @@ public class Start {
                         {0, 3},
                         {1, 0}};
 
+        System.out.println();
+
+        PrintArray.printArray(a);
+        System.out.println();
+        PrintArray.printArray(b);
         System.out.println();
 
         PrintArray.printArray(MultiplexArray.arrayMultiplexArray(a, b));
